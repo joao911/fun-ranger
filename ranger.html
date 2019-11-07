@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="st/style/style.css">
+    <title>Ranger</title>
+</head>
+<body>
+    <div class="arrumando">
+    <h2 id="rangerValue"></h2>
+    <div id="fillrangervalue"></div> 
+    <input type="range" class="ranger" name="" id="" value="0" min="0" max="100" onmousemove="
+    rangerSlider(this.value)" onchange="rangerSlider(this.value)">
+    </div>
+
+    
+    <script>
+    function rangerSlider(value){
+        document.getElementById('rangerValue').innerHTML = value;
+        document.getElementById('fillrangervalue').style.width = +value+"%";
+    }
+    </script>
+</body>
+</html>
